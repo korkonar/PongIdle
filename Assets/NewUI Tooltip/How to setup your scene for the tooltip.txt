@@ -1,0 +1,20 @@
+Hi and thank you for downloading this asset.
+
+Underneath I will write how to setup the scene :
+
+in the scripts folder you will see 4 scripts.
+
+-simpleTooltipWithText is to be set on your tooltip if you wish for it to have only a Text gameObject as a child and nothing else.
+
+- TooltipSetup is to be added on an empty GameObject in your scene. Then set the GameObject you wish to use as the tooltip in the
+"Tooltip Object" entry om the inspector.
+
+- UI_TooltipReceiver is to be added on any UI object that will display the tooltip
+This script is to be used with custom Tooltip that do not have the simpleTooltipWithText script
+For custom tooltip you might wish to inherit this class to set up your own variables and methods.
+
+- UI_TooltipReceiverWithText is to be added on any UI object that will display a tooltip 
+which has the simpleTooltipWithText script.
+
+Of course do not forget to make the tooltip gameObejct the last item in your canvas hierarchy 
+so it can be on top of all the other UI elements
